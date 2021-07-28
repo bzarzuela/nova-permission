@@ -30,6 +30,13 @@ class RoleBooleanGroup extends BooleanGroup
         $this->options($options);
     }
 
+    public function withOptions(array $options): self
+    {
+        $this->options($options);
+
+        return $this;
+    }
+
     /**
      * @param NovaRequest $request
      * @param string $requestAttribute
